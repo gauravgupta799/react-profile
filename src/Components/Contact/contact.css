@@ -21,7 +21,7 @@
     padding: 1rem;
     border-radius:0.75rem;
     text-align: center;
-    transition:5s;
+    transition:3s;
     cursor: pointer;
 }
 .contact_card:hover{
@@ -43,6 +43,7 @@
 }
 .contact_button:hover .contact_button-icon{
     transform:translate(0.25rem);
+    color:#222;
 }
 .contact_card-data{
     display: block;
@@ -72,7 +73,8 @@
     border:2px solid rgba(0,0,0,0.3);
     background:none;
     outline:none;
-    color:var(--text-color);
+    color:#333;
+    letter-spacing: 0.5px;
     border-radius:0.75rem;
     padding: 1.5rem;
     z-index:1;
