@@ -3,6 +3,14 @@ import "./Header.css";
 
 const Header = () => {
     const [toggle, showMenu] = useState(false);
+    window.addEventListener('scroll', function(){
+        const TopNav = document.querySelector(".header");
+        if(this.scrollY >= 130){
+            TopNav.classList.add("border-bottom")
+        }else{
+            TopNav.classList.remove("border-bottom")
+        }
+    })
 
     return (
         <header className="header">
@@ -14,7 +22,7 @@ const Header = () => {
                   " nav_menu "}>
                     <ul className="nav_list grid">
                         <li className="nav_item">
-                            <a href="abc.com" className="nav_link active_link">
+                            <a href="#home" className="nav_link active_link">
                                 <i className="uil uil-estate nav_icon"></i>
                             Home
                             </a>
