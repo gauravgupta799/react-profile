@@ -1,11 +1,12 @@
 import './App.css';
 import About from './Components/About/About';
-// import Country from './Components/CountryCode/Country';
+import Contact from './Components/Contact/Contact';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Qualifications from './Components/Qualification/Qualifications';
 import Services from './Components/Services/Services';
 import Skills from './Components/Skills/Skills';
+import Testimonials from './Components/Testimonials/Testimonials';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <Skills/>
         <Services/>
         <Qualifications/>
-        {/* <Country/> */}
+        <Testimonials/>
+        <Contact/>
       </main>
     </>
   );
