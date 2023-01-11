@@ -23,6 +23,14 @@
     column-gap: 1.5rem;
     margin-bottom: var(--mb-2);
 }
+.footer_list > li > a{
+    text-decoration: none;
+    color:var(--title-color-dark);
+    font-size:1.05em;
+}
+.footer_list > li > a:hover{
+    color:var(--title-color);
+}
 .footer_social{
     display: flex;
     justify-content:center;
