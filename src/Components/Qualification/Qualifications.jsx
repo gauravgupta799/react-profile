@@ -8,7 +8,7 @@ const Qualifications = () => {
         setToggleState(index)
     }
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="qualifications">
         <h2 className="section_title">Qualification</h2>
         <span className="section_subtitle">My Personal Journey</span>
 
@@ -38,14 +38,14 @@ const Qualifications = () => {
                     <div className="qualification_data">
                         <div>
                             <h3 className="qualification_title">
-                                Web Developer
+                                B.Tech
                             </h3>
                             <span className="qualification_subtitle">
-                                Spain - Institute
+                                GCRG Group Of Institute, Lucknow
                             </span>
                             <div className="qualification_calender">
                                 <i className="uil uil-calender-alt"></i>
-                                2021 - Present
+                                2016 - 2020
                             </div>
                         </div>
 
@@ -63,54 +63,14 @@ const Qualifications = () => {
                         </div>
                         <div>
                             <h3 className="qualification_title">
-                                Art Directior
+                                12<sup>th</sup>, PCM
                             </h3>
                             <span className="qualification_subtitle">
-                                Spain - Institute
+                                Kalicharan Inter College, Lucknow
                             </span>
                             <div className="qualification_calender">
                                 <i className="uil uil-calender-alt"></i>
-                                2020 - 2021
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="qualification_data">
-                        <div>
-                            <h3 className="qualification_title">
-                                Web Designer
-                            </h3>
-                            <span className="qualification_subtitle">
-                                Spain - Institute
-                            </span>
-                            <div className="qualification_calender">
-                                <i className="uil uil-calender-alt"></i>
-                                2019- 2020
-                            </div>
-                        </div>
-
-                        <div>
-                            <span className="qualification_rounder"></span>
-                            <span className="qualification_line"></span>
-                        </div>
-                    </div>
-
-                    <div className="qualification_data">
-                        <div></div>
-                        <div>
-                            <span className="qualification_rounder"></span>
-                            <span className="qualification_line"></span>
-                        </div>
-                        <div>
-                            <h3 className="qualification_title">
-                                Backend Developer
-                            </h3>
-                            <span className="qualification_subtitle">
-                                Spain - Institute
-                            </span>
-                            <div className="qualification_calender">
-                                <i className="uil uil-calender-alt"></i>
-                                2020 - 2021
+                                2014 - 2016
                             </div>
                         </div>
                     </div>
@@ -121,54 +81,14 @@ const Qualifications = () => {
                     <div className="qualification_data">
                         <div>
                             <h3 className="qualification_title">
-                                Product Desginer
-                            </h3>
-                            <span className="qualification_subtitle">
-                                Microsoft - Spain
-                            </span>
-                            <div className="qualification_calender">
-                                <i className="uil uil-calender-alt">
-                                2021 - Present</i>
-                            </div>
-                        </div>
-
-                        <div>
-                            <span className="qualification_rounder"></span>
-                            <span className="qualification_line"></span>
-                        </div>
-                    </div>
-
-                    <div className="qualification_data">
-                        <div></div>
-                        <div>
-                            <span className="qualification_rounder"></span>
-                            <span className="qualification_line"></span>
-                        </div>
-                        <div>
-                            <h3 className="qualification_title">
-                                UX Desginer
-                            </h3>
-                            <span className="qualification_subtitle">
-                                Apple Inc. - Spain 
-                            </span>
-                            <div className="qualification_calender">
-                                <i className="uil uil-calender-alt">
-                                2020 - 2021</i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="qualification_data">
-                        <div>
-                            <h3 className="qualification_title">
                                 Web Development
                             </h3>
                             <span className="qualification_subtitle">
-                                Figma - Spain
+                                Mobilefirst Applications, Ahemdabad
                             </span>
                             <div className="qualification_calender">
-                                <i className="uil uil-calender-alt"></i>
-                                2019- 2020
+                                <i className="uil uil-calender-alt">
+                                Jan 2022 - Present</i>
                             </div>
                         </div>
 
@@ -177,7 +97,7 @@ const Qualifications = () => {
                             <span className="qualification_line"></span>
                         </div>
                     </div>
-                    
+
                     <div className="qualification_data">
                         <div></div>
                         <div>
@@ -186,18 +106,17 @@ const Qualifications = () => {
                         </div>
                         <div>
                             <h3 className="qualification_title">
-                                UX Desginer
+                                Full Stack Development
                             </h3>
                             <span className="qualification_subtitle">
-                                Apple Inc. - Spain 
+                                Edureka, Bengaluru
                             </span>
                             <div className="qualification_calender">
                                 <i className="uil uil-calender-alt">
-                                2020 - 2021</i>
+                                July 2021 - Oct 2021</i>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

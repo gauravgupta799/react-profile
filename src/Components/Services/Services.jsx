@@ -18,7 +18,7 @@ const Services = () => {
             <div className="services_content">
                 <div>
                     <i className="uil uil-web-grid services_icon"></i>
-                    <h3 className="services_title">Web <br/>Dsigner</h3>
+                    <h3 className="services_title">Web <br/>Development</h3>
                 </div>
                 <span className="services_button" 
                 onClick={()=>toggleModal(1)}>View More

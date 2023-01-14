@@ -3,7 +3,7 @@ import "./contact.css";
 
 const Contact = () => {
 	return (
-		<section className='cotanct section'>
+		<section className='cotanct section' id="contact">
 			<h2 className='section_title'>Contact Me</h2>
 			<span className='section_subtitle'>Get in touch</span>
 			{/* ----------Left Section--------- */}
@@ -14,7 +14,7 @@ const Contact = () => {
 						<div className='contact_card'>
 							<i className='bx bx-mail-send contact_card-icon'></i>
 							<h3 className='contact_card-title'>Email</h3>
-							<span className='contact_card-data'>abcd@gmail.com</span>
+							<span className='contact_card-data'>dev.gaurav769@gmail.com</span>
 							<a href='#abc' className='contact_button'>
                               Write me
 								<i className='bx bx-right-arrow-alt contact_button-icon'></i>
@@ -24,7 +24,7 @@ const Contact = () => {
 						<div className='contact_card'>
 							<i className='bx bxl-whatsapp contact_card-icon'></i>
 							<h3 className='contact_card-title'>WhatsApp</h3>
-							<span className='contact_card-data'>+91-998-377-8439</span>
+							<span className='contact_card-data'>+91-9140024536</span>
 							<a href='#abc' className='contact_button'>
 								Write me
 								<i className='bx bx-right-arrow-alt contact_button-icon'></i>
@@ -32,10 +32,10 @@ const Contact = () => {
 						</div>
 
 						<div className='contact_card'>
-							<i className='bx bxl-messenger contact_card-icon'></i>
-							<h3 className='contact_card-title'>Messenger</h3>
-							<span className='contact_card-data'>user234/grk</span>
-							<a href='#abc' className='contact_button'>
+                         <i class='bx bxl-telegram contact_card-icon'></i>
+							<h3 className='contact_card-title'>Telegram</h3>
+							<span className='contact_card-data'>@gauravgupta999</span>
+							<a href='#a' className='contact_button'>
 								Write me
 								<i className='bx bx-right-arrow-alt contact_button-icon'></i>
 							</a>

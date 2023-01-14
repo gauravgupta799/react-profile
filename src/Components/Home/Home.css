@@ -15,12 +15,28 @@
 .home_social-icon{
     font-size:1.25rem;
     color:var(--title-color);
+    transition:0.5s ease-out;
 }
-.home_social-icon:hover{
-    color:var(--title-color-dark);
+.instagram-icon:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right,#feda75,    #fa7e1e,#d62976,#962fbf,#4f5bd5);
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.linkedin-icon:hover{
+    color:#0072b1;
+    transform: scale(1.1);
+}
+.github-icon:hover{
+    color:#3d2d00;
+    transform: scale(1.1);
+}
+.twitter-icon:hover{
+    color:#00acee;
+    transform: scale(1.1);
 }
 .home-title-container{
-    /* border:1px solid red; */
     display: flex;
     align-items: center;
     gap:0.3rem;
@@ -55,7 +71,7 @@
     text-align: justify;
 }
 .home_img{
-    background-image: url(../../assets/profile.jpg);
+    background-image: url(../../assets/profileImg2.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;

@@ -139,6 +139,7 @@
     .contact_card{
         width: 220px;
         margin: auto;
+        padding:0.5rem;
     }
     .contact_form{
         width: 250px;

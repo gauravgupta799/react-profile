@@ -7,14 +7,14 @@ const Intro = () => {
                 <i className="bx bx-award about_icon"></i>
                 <h3 className="about_title">Experience</h3>
                 <span className="about_subtitle">
-                    2 years working as a full stack developer
+                    1+ year of working as a ReactJs Developer
                 </span>
             </div>
             <div className="about_box">
                 <i className="bx bx-briefcase-alt about_icon"></i>
                 <h3 className="about_title">Completed</h3>
                 <span className="about_subtitle">
-                    48+ Projects
+                    40+ Projects
                 </span>
             </div>
             <div className="about_box">

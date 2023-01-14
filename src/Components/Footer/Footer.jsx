@@ -18,7 +18,7 @@ const Footer = () => {
                     rel='noreferrer'
                     className='footer_social-link'
                 >
-                    <i className='bx bxl-instagram'></i>
+                    <i className='bx bxl-instagram instagram-icon'></i>
                 </a>
                 <a
                     href='https://www/linked.com'
@@ -26,7 +26,7 @@ const Footer = () => {
                     rel='noreferrer'
                     className='footer_social-link'
                 >
-                    <i className='bx bxl-linkedin'></i>
+                    <i className='bx bxl-linkedin linkedin-icon'></i>
                 </a>
                 <a
                     href='https://www/github.com'
@@ -34,11 +34,19 @@ const Footer = () => {
                     rel='noreferrer'
                     className='footer_social-link'
                 >
-                    <i className='bx bxl-github'></i>
+                    <i className='bx bxl-github github-icon'></i>
+                </a>
+                <a
+                    href='https://www/github.com'
+                    target='_blank'
+                    rel='noreferrer'
+                    className='footer_social-link'
+                >
+                    <i className='bx bxl-twitter twitter-icon'></i>
                 </a>
         </div>
         <span className="footer_copyright">
-          &#169; Codingalay. All rights reserved      
+          &#169; GauravGupta. All rights reserved      
         </span>
 
    </div>

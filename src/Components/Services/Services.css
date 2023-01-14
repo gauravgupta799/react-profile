@@ -4,10 +4,9 @@
     column-gap: 1.8rem;
 }
 .services_content{
-    /* position: relative; */
     border:1px solid rgba(0,0,0,0.1);
     background-color:var(--container-color);
-    padding: 6rem 0 2rem 2.5rem;
+    padding: 2rem 0 2rem 2.5rem;
 }
 .services_icon{
     display: block;
@@ -138,7 +137,7 @@
         grid-template-columns: max-content;
     }
     .services_content{
-        padding-right: 6rem;
+        padding: 1rem;
+        width: 220px;
     }
-    
   }
