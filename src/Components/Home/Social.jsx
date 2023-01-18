@@ -1,41 +1,21 @@
 import React from "react";
+import {SocialLinks } from "../../Datas";
 
 const Social = () => {
 	return (
 		<div className='home_social'>
-			<a
-				href='https://www.instagram.com/gaurav_gupta799/'
-				target='_blank'
-				rel='noreferrer'
-				className='home_social-icon instagram-icon'
-			>
-				<i className='uil uil-instagram'></i>
-			</a>
-			<a
-				href='www.linkedin.com/in/gauravgupta88'
-				target='_blank'
-				rel='noreferrer'
-				className='home_social-icon linkedin-icon'
-			>
-				<i className='uil uil-linkedin'
-				></i>
-			</a>
-			<a
-				href='https://github.com/gauravgupta799'
-				target='_blank'
-				rel='noreferrer'
-				className='home_social-icon github-icon'
-			>
-				<i className='uil uil-github-alt'></i>
-			</a>
-			<a
-				href='https://github.com/gauravgupta799'
-				target='_blank'
-				rel='noreferrer'
-				className='home_social-icon twitter-icon'
-			>
-				<i className='uil uil-twitter'></i>
-			</a>
+		{ SocialLinks.map((socialLink)=>
+				<a
+					key={socialLink.name}
+					href={socialLink.link}
+					target='_blank'
+					rel='noreferrer'
+					className={`home_social-icon ${socialLink.iconClass}`}
+				>
+					<i className={socialLink.icon}></i>
+				</a>
+			)
+		}
 		</div>
 	);
 };

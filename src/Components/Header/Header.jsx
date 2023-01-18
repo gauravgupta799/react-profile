@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
-import DarkLight from '../DarkLightMode/DarkLight';
+// import DarkLight from '../DarkLightMode/DarkLight';
 import "./Header.css";
+import { NavData } from '../../Datas';
 
 const Header = () => {
     const [toggle, showMenu] = useState(false);
@@ -16,54 +17,19 @@ const Header = () => {
     return (
         <header className="header">
             <nav className="nav container">
-                <a href="#home" 
-                className='nav_logo'>Gaurav</a>
-                
-                <div className={ toggle ? "nav_menu show_menu" :
-                  " nav_menu "}>
+                <a href="#home" className='nav_logo'>Gaurav</a>
+                <div className={ toggle ? "nav_menu show_menu" : " nav_menu "}>
                     <ul className="nav_list grid">
-                        <li className="nav_item">
-                            <a href="#home" className="nav_link active_link">
-                                <i className="uil uil-estate nav_icon"></i>
-                                 Home
-                            </a>
-                        </li>
-                        <li className="nav_item">
-                            <a href="#about" className="nav_link">
-                                <i className="uil uil-user nav_icon"></i>
-                                About
-                            </a>
-                        </li>
-                        <li className="nav_item">
-                            <a href="#skills" className="nav_link">
-                                <i className="uil uil-file-alt nav_icon"></i>
-                            Skills
-                            </a>
-                        </li>
-                        <li className="nav_item">
-                            <a href="#qualifications" className="nav_link">
-                                <i className="uil uil-file-alt nav_icon"></i>
-                            Qualifications
-                            </a>
-                        </li>
-                        <li className="nav_item">
-                            <a href="#services" className="nav_link">
-                                <i className="uil uil-briefcase-alt nav_icon"></i>
-                                Services
-                            </a>
-                        </li>
-                        <li className="nav_item">
-                            <a href="#projects" className="nav_link">
-                                <i className="uil uil-scenery nav_icon"></i>
-                                Projects
-                            </a>
-                        </li>
-                        <li className="nav_item">
-                            <a href ="#contact" className="nav_link">
-                                <i className="uil uil-message nav_icon"></i>
-                                Contact
-                            </a>
-                        </li>
+                        {
+                            NavData.map((navlink)=>
+                                <li className="nav_item" key={navlink.id}>
+                                    <a href={navlink.href} className="nav_link active_link">
+                                        {/* <i className="uil uil-estate nav_icon"></i> */}
+                                        {navlink.navTitle}
+                                    </a>
+                                </li>
+                            )
+                        }
                        {/* <li style={{
                         // marginRight:"-6rem",
                         marginLeft:"2rem",
@@ -74,13 +40,10 @@ const Header = () => {
                          <DarkLight/>
                        </li> */}
                     </ul>
-                    <i className="uil uil-times nav_close" 
-                    onClick={()=>showMenu(!toggle)}></i>
+                    <i className="uil uil-times nav_close" onClick={()=>showMenu(!toggle)}></i>
                 </div>
 
-                <div className="nav_toggle"
-                  onClick={()=>showMenu(!toggle)}
-                >
+                <div className="nav_toggle" onClick={()=>showMenu(!toggle)}>
                     <i className="uil uil-apps"></i>
                 </div>
             </nav>

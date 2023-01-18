@@ -1,58 +1,33 @@
 import React from "react";
+import { BackendData } from "../../Datas";
 
 const Backend = () => {
 	return (
 		<div className='skills_content'>
 			<h3 className='skills_title'>Backend developer</h3>
-
 			<div className='skills_box'>
-				<div className='skills_group'>
-					<div className='skills_data'>
-						<i className='bx bx-badge-check'></i>
-						<div>
-							<h3 className='skills_name'>NodeJs</h3>
-							<span className='skills_level'>Intermediate</span>
-						</div>
+				{ BackendData.map((data, i) => (
+					<div className='skills_group' key={i}>
+						{data?.left?.map((leftdata, i) => (
+							<div className='skills_data' key={leftdata.title}>
+								<i className='bx bx-badge-check'></i>
+								<div>
+									<h3 className='skills_name'>{leftdata.title}</h3>
+									<span className='skills_level'>{leftdata.level}</span>
+								</div>
+							</div>
+						))}
+						{data?.right?.map((rightdata, i) => (
+							<div className='skills_data' key={rightdata.title}>
+								<i className='bx bx-badge-check'></i>
+								<div>
+									<h3 className='skills_name'>{rightdata.title}</h3>
+									<span className='skills_level'>{rightdata.level}</span>
+								</div>
+							</div>
+						))}
 					</div>
-					<div className='skills_data'>
-						<i className='bx bx-badge-check'></i>
-						<div>
-							<h3 className='skills_name'>Python</h3>
-							<span className='skills_level'>Intermediate</span>
-						</div>
-					</div>
-					<div className='skills_data'>
-						<i className='bx bx-badge-check'></i>
-						<div>
-							<h3 className='skills_name'>Java</h3>
-							<span className='skills_level'>Basic</span>
-						</div>
-					</div>
-				</div>
-
-                <div className='skills_group'>
-					<div className='skills_data'>
-						<i className='bx bx-badge-check'></i>
-						<div>
-							<h3 className='skills_name'>MongoDB</h3>
-							<span className='skills_level'>Intermediate</span>
-						</div>
-					</div>
-					<div className='skills_data'>
-						<i className='bx bx-badge-check'></i>
-						<div>
-							<h3 className='skills_name'>Firebase</h3>
-							<span className='skills_level'>Intermedia</span>
-						</div>
-					</div>
-					<div className='skills_data'>
-						<i className='bx bx-badge-check'></i>
-						<div>
-							<h3 className='skills_name'>MySQL</h3>
-							<span className='skills_level'>Basic</span>
-						</div>
-					</div>
-				</div>
+				))}
 			</div>
 		</div>
 	);

@@ -59,11 +59,21 @@
     border-radius: 1.5rem;
 }
 .services_modal-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
     font-size:1.5rem;
     color:var(--title-color);
+    border-radius: 50%;
+}
+.services_modal-close:hover{
+    background-color:#111;
+    color:white;
     cursor:pointer;
 }
 .services_modal-title,
@@ -112,10 +122,13 @@
   /* For medium devices */
   @media screen and (max-width: 768px) {
     .services_container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap:0.7rem;
+        width: 400px;
+        margin: 0 auto;
     }
     .services_content{
-        padding:3.5rem 0.5rem 1.25rem 1.5rem;
+        padding:1rem;
     }
     .services_icon{
         font-size:1.5rem;
@@ -123,6 +136,15 @@
   }
   
   @media screen and (max-width: 576px) {
+    .services_container{
+        grid-template-columns: repeat(1, 1fr);
+        gap:0.95rem;
+        width: 300px;
+        margin: 0 auto;
+    }
+    /* .service_content{
+        padding:1rem
+    } */
     .services_modal-content{
         padding: 4.5rem 1.5rem 2.5rem;
     }
@@ -135,6 +157,7 @@
   @media screen and (max-width: 350px) {
     .services_container{
         grid-template-columns: max-content;
+        gap:0.5rem;
     }
     .services_content{
         padding: 1rem;

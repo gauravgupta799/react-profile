@@ -14,7 +14,7 @@ const Testimonials = () => {
 			<Swiper
 				className='testimonial_container'
 				loop={true}
-        sliderPerView ={2}
+        		sliderPerView ={2}
 				grabCursor={true}
 				spaceBetween={24}
 				pagination={{

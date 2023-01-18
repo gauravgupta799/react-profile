@@ -1,5 +1,4 @@
 import React from "react";
-// import Hand from "../../assets/hand.svg";
 import "./Home.css"
 
 const Data = () => {

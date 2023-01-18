@@ -8,8 +8,8 @@ import Qualifications from './Components/Qualification/Qualifications';
 import Scrollup from './Components/ScrollUp/Scrollup';
 import Services from './Components/Services/Services';
 import Skills from './Components/Skills/Skills';
-import Testimonials from './Components/Testimonials/Testimonials';
-import Projects from './Components/Projects/Projects';
+// import Testimonials from './Components/Testimonials/Testimonials';
+// import Projects from './Components/Projects/Projects';
 
 function App() {
   return (

@@ -17,25 +17,6 @@
     color:var(--title-color);
     transition:0.5s ease-out;
 }
-.instagram-icon:hover{
-    transform: scale(1.1);
-    background: linear-gradient(to right,#feda75,    #fa7e1e,#d62976,#962fbf,#4f5bd5);
-    background-clip:text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-.linkedin-icon:hover{
-    color:#0072b1;
-    transform: scale(1.1);
-}
-.github-icon:hover{
-    color:#3d2d00;
-    transform: scale(1.1);
-}
-.twitter-icon:hover{
-    color:#00acee;
-    transform: scale(1.1);
-}
 .home-title-container{
     display: flex;
     align-items: center;

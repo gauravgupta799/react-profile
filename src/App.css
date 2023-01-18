@@ -179,6 +179,25 @@ img {
   align-items: center;
   gap:0.2rem;
 }
+.instagram-icon:hover{
+  transform: scale(1.1);
+  background: linear-gradient(to right,#feda75,    #fa7e1e,#d62976,#962fbf,#4f5bd5);
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.linkedin-icon:hover{
+  color:#0072b1;
+  transform: scale(1.1);
+}
+.github-icon:hover{
+  color:#3d2d00;
+  transform: scale(1.1);
+}
+.twitter-icon:hover{
+  color:#00acee;
+  transform: scale(1.1);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
