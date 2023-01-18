@@ -6,9 +6,7 @@ const Services = () => {
     const [toggle, setToggle]= useState(0)
 
     const toggleModal=(index)=>{
-        console.log("index", index)
         setToggle(index)
-
     }
   return (
     <section className="services section" id="services">
